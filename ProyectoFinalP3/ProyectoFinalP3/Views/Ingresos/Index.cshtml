@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProyectoFinalP3.Models.Ingresos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Paciente
+            
+        </th>
+        <th>
+            Habitación
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaIngreso)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pacientes.Nombre)
+            
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Habitaciones.Numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaIngreso)
+        </td>
+        
+    </tr>
+}
+
+</table>
