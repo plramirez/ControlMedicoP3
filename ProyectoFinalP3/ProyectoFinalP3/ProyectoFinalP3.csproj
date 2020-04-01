@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AltasMedicasController.cs" />
     <Compile Include="Controllers\CitasMedicasController.cs" />
     <Compile Include="Controllers\HabitacionesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -201,6 +202,11 @@
     <Content Include="Views\CitasMedicas\Index.cshtml" />
     <Content Include="Views\Ingresos\Create.cshtml" />
     <Content Include="Views\Ingresos\Index.cshtml" />
+    <Content Include="Views\AltasMedicas\Create.cshtml" />
+    <Content Include="Views\AltasMedicas\Delete.cshtml" />
+    <Content Include="Views\AltasMedicas\Details.cshtml" />
+    <Content Include="Views\AltasMedicas\Edit.cshtml" />
+    <Content Include="Views\AltasMedicas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
