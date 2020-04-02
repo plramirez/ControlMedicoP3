@@ -203,9 +203,6 @@
     <Content Include="Views\Ingresos\Create.cshtml" />
     <Content Include="Views\Ingresos\Index.cshtml" />
     <Content Include="Views\AltasMedicas\Create.cshtml" />
-    <Content Include="Views\AltasMedicas\Delete.cshtml" />
-    <Content Include="Views\AltasMedicas\Details.cshtml" />
-    <Content Include="Views\AltasMedicas\Edit.cshtml" />
     <Content Include="Views\AltasMedicas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
