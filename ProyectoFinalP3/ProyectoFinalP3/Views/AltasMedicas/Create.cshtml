@@ -11,65 +11,65 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <h4>AltasMedicas</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<div class="form-horizontal">
+    <h4>AltasMedicas</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.IdIngresos, "IdIngresos", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("IdIngresos", null, htmlAttributes: new { @class = "form-control", id="list"})
-                @Html.ValidationMessageFor(model => model.IdIngresos, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Paciente, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Paciente, new { htmlAttributes = new { @class = "form-control", id="Paciente", @readonly="readonly" } })
-                @Html.ValidationMessageFor(model => model.Paciente, "", new { @class = "text-danger"})
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Habitacion, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Habitacion, new { htmlAttributes = new { @class = "form-control", id="NumeroHabitacion", @readonly="readonly" } })
-                @Html.ValidationMessageFor(model => model.Habitacion, "", new { @class = "text-danger"  })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.FechaIngreso, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.FechaIngreso, new { htmlAttributes = new { @class = "form-control", id="FIngreso", @readonly="readonly" } })
-                @Html.ValidationMessageFor(model => model.FechaIngreso, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.FechaSalido, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.FechaSalido, new { htmlAttributes = new { @class = "form-control", id="FSalida" } })
-                @Html.ValidationMessageFor(model => model.FechaSalido, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.PrecioTotal, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.PrecioTotal, new { htmlAttributes = new { @class = "form-control", id="MFinal", @readonly="readonly" } })
-                @Html.ValidationMessageFor(model => model.PrecioTotal, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.FechaSalido,"Fecha de Salida", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.FechaSalido, new { htmlAttributes = new { @class = "form-control", id = "FSalida", type = "date" } })
+            @Html.ValidationMessageFor(model => model.FechaSalido, "", new { @class = "text-danger" })
         </div>
     </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.IdIngresos, "ID de Ingreso", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("IdIngresos", null, "--Seleccione el ID del ingreso--", htmlAttributes: new { @class = "form-control", id = "list" })
+            @Html.ValidationMessageFor(model => model.IdIngresos, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Paciente, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Paciente, new { htmlAttributes = new { @class = "form-control", id = "Paciente", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.Paciente, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Habitacion, "Habitación", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Habitacion, new { htmlAttributes = new { @class = "form-control", id = "NumeroHabitacion", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.Habitacion, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FechaIngreso, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.FechaIngreso, new { htmlAttributes = new { @class = "form-control", id = "FIngreso", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.FechaIngreso, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PrecioTotal, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PrecioTotal, new { htmlAttributes = new { @class = "form-control", id = "MFinal", @readonly = "readonly" } })
+            @Html.ValidationMessageFor(model => model.PrecioTotal, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
 }
 
 <div>

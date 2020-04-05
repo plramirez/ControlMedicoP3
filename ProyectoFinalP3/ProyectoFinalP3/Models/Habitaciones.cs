@@ -14,4 +14,5 @@ namespace ProyectoFinalP3.Models
         public string Tipo { get; set; }
         public int Precio { get; set; }
     }
+
 }
