@@ -1,10 +1,10 @@
 ﻿@model ProyectoFinalP3.Models.Habitaciones
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Agregar";
 }
 
-<h2>Create</h2>
+<h2>Agregar Habitación</h2>
 
 
 @using (Html.BeginForm()) 
@@ -31,7 +31,7 @@
                     new SelectListItem { Text="Doble", Value= "Doble"},
                     new SelectListItem { Text="Privada", Value= "Privada"},
                     new SelectListItem { Text="Suite", Value= "Suite"}
-                    }, "--Selecciona el tipo de habitacion--", htmlAttributes: new { @class = "form-control" })
+                    }, "--Seleccione el tipo de habitacion--", htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Tipo, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -46,14 +46,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Agregar" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Volver al listado", "Index")
 </div>
 
 @section Scripts {
