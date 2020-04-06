@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoFinalP3.Models.Ingresos>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Ingresos";
 }
 
-<h2>Index</h2>
+<h2>Ingresos</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Agregar nuevo Ingreso", "Create")
 </p>
 <table class="table">
     <tr>
@@ -19,7 +19,7 @@
             Habitación
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FechaIngreso)
+            Fecha de Ingreso
         </th>
         <th></th>
     </tr>
