@@ -154,7 +154,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\shop-homepage.css" />
     <Content Include="Content\gulpfile.js" />
-    <Content Include="Content\imgs\collins.png" />
+    <Content Include="Content\imgs\altasmedicas.png" />
+    <Content Include="Content\imgs\citas.jpeg" />
+    <Content Include="Content\imgs\cmp.png" />
+    <Content Include="Content\imgs\habitaciones.jpg" />
+    <Content Include="Content\imgs\ingresos.png" />
+    <Content Include="Content\imgs\logo %281%29.png" />
+    <Content Include="Content\imgs\med1.jpg" />
+    <Content Include="Content\imgs\med2.jpg" />
+    <Content Include="Content\imgs\medicos.jpg" />
+    <Content Include="Content\imgs\pacientes.jpg" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Content\vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -209,8 +218,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Medicos\Create.cshtml" />
     <Content Include="Views\Medicos\Delete.cshtml" />
