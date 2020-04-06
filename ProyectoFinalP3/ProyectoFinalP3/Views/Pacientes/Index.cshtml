@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoFinalP3.Models.Pacientes>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Pacientes";
 }
 
-<h2>Index</h2>
+<h2>Pacientes</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Agregar paciente", "Create")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.Seguro)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdPaciente }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdPaciente }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdPaciente })
+            @Html.ActionLink("Modificar", "Edit", new { id=item.IdPaciente }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.IdPaciente }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.IdPaciente })
         </td>
     </tr>
 }
