@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ProyectoFinalP3.Models.AltasMedicas>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Altas Médicas";
 }
 
-<h2>Index</h2>
+<h2>Altas Médicas</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Agregar nueva", "Create")
 </p>
 <table class="table">
     <tr>
@@ -15,16 +15,16 @@
             @Html.DisplayNameFor(model => model.Paciente)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Habitacion)
+            Habitación
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FechaIngreso)
+            Fecha de Ingreso
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FechaSalido)
+            Fecha de Salida
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PrecioTotal)
+            Monto a Pagar
         </th>
         <th></th>
     </tr>
